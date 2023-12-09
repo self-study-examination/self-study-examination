@@ -32,8 +32,6 @@ class AbstractTown(object):
     def run(self):
         logging.info("==============================")
         
-        self.clean()
-        
         logging.info("start. self object is %s",self)
         list = self.__request()
         
@@ -50,6 +48,8 @@ class AbstractTown(object):
             data.append(result)
         
         self.__write(data)
+        
+        return data
     
     def __write(self,data):
         # wtire to template 
@@ -213,13 +213,13 @@ def switch(conf):
         case _:
             return AbstractTown(conf)
 
-def write_readme(config):
+def write_readme(list):
     
     # wtire to readme
     template = env.get_template('readme.md')
-    content = template.render(config=config)
+    content = template.render(list=list)
     
-    with open('README.md', "w", encoding="utf-8") as f:
+    with open('notification/README.md', "w", encoding="utf-8") as f:
             f.write(content)
     
 
@@ -228,10 +228,17 @@ def main():
     with open('config.json') as file:
         json_data = json.load(file)
     
-    for j in json_data:
-        switch(j).run()
+    data = []
+    time = datetime.now().strftime('%Y-%m-%d')
     
-    write_readme(json_data)    
+    for j in json_data:
+        d = switch(j).run()
+        data.append({
+            'conf': j,
+            'data': d,
+            'time': time
+        })
+    write_readme(data)    
 
     
     

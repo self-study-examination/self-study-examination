@@ -7,7 +7,7 @@
         "select": "ul#list li",
         "dateformater": "%Y/%m/%d",
         "template":"page.md",
-        "output": "docs/sc.md"
+        "output": "notification/docs/sc.md"
     },
     {
         "city": "甘肃",
@@ -17,7 +17,7 @@
         "select": ".newslist li",
         "dateformater": "%Y-%m-%d",
         "template":"page.md",
-        "output": "docs/gs.md"
+        "output": "notification/docs/gs.md"
     },
     {
         "city": "陕西",
@@ -27,7 +27,7 @@
         "select": ".main .news-list li",
         "dateformater": "%Y-%m-%d",
         "template":"page.md",
-        "output": "docs/sx.md"
+        "output": "notification/docs/sx.md"
     },
     {
         "city": "山西",
@@ -37,7 +37,7 @@
         "select": ".classnews-list li",
         "dateformater": "%Y-%m-%d",
         "template":"page.md",
-        "output": "docs/shx.md"
+        "output": "notification/docs/shx.md"
     },
     {
         "city": "北京",
@@ -47,7 +47,7 @@
         "select": ".com-list li",
         "dateformater": "%Y-%m-%d",
         "template":"page.md",
-        "output": "docs/bj.md"
+        "output": "notification/docs/bj.md"
     },
     {
         "city": "安徽",
@@ -57,7 +57,7 @@
         "select": ".list-news ul li",
         "dateformater": "%Y-%m-%d",
         "template":"page.md",
-        "output": "docs/ah.md"
+        "output": "notification/docs/ah.md"
     },
     {
         "city": "浙江",
@@ -67,7 +67,7 @@
         "select": "#content ul li",
         "dateformater": "%Y-%m-%d",
         "template":"page.md",
-        "output": "docs/zj.md"
+        "output": "notification/docs/zj.md"
     },
     {
         "city": "江苏",
@@ -77,6 +77,6 @@
         "select": "ul.news-list.content-list-ul li",
         "dateformater": "%Y-%m-%d",
         "template":"page.md",
-        "output": "docs/js.md"
+        "output": "notification/docs/js.md"
     }
 ]
