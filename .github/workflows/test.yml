@@ -3,7 +3,7 @@ name: Test Build
 on:
   push:
     branches:
-      - 'test'
+      - 'master'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -28,6 +28,4 @@ jobs:
         
     - name: Create a new commit
       run: |
-        git add .
-        git commit -m "Github Action Auto Commit"
-        git push
+        git status
