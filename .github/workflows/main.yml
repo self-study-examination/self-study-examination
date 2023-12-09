@@ -1,0 +1,33 @@
+name: Scheduled Build
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 在每天的UTC时间的午夜执行构建
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      
+    - name: Set up Git
+      run: |
+        git config --global user.email "action@github.com"
+        git config --global user.name "GithubAction"
+        
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+        
+    - name: Run build script
+      run: |
+        python main.py
+        
+    - name: Create a new commit
+      run: |
+        git add .
+        git commit -m "Github Action Auto Commit"
+        git push
