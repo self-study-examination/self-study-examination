@@ -1,0 +1,82 @@
+[
+    {
+        "city": "四川",
+        "name": "四川省教育考试院",
+        "domain": "https://www.sceea.cn",
+        "request": "https://www.sceea.cn/List/NewsList_62_1.html",
+        "select": "ul#list li",
+        "dateformater": "%Y/%m/%d",
+        "template":"page.md",
+        "output": "docs/sc.md"
+    },
+    {
+        "city": "甘肃",
+        "name": "甘肃省教育考试院",
+        "domain": "https://www.ganseea.cn/",
+        "request": "https://www.ganseea.cn/zixuekaoshi/",
+        "select": ".newslist li",
+        "dateformater": "%Y-%m-%d",
+        "template":"page.md",
+        "output": "docs/gs.md"
+    },
+    {
+        "city": "陕西",
+        "name": "陕西省教育考试院",
+        "domain": "https://www.sneea.cn/",
+        "request": "https://www.sneea.cn/zc/zxks.htm",
+        "select": ".main .news-list li",
+        "dateformater": "%Y-%m-%d",
+        "template":"page.md",
+        "output": "docs/sx.md"
+    },
+    {
+        "city": "山西",
+        "name": "山西教育考试服务网",
+        "domain": "https://www.sxjyksfw.cn/",
+        "request": "https://www.sxjyksfw.cn/articles/zxks/index.html",
+        "select": ".classnews-list li",
+        "dateformater": "%Y-%m-%d",
+        "template":"page.md",
+        "output": "docs/shx.md"
+    },
+    {
+        "city": "北京",
+        "name": "北京教育考试院",
+        "domain": "https://www.bjeea.cn/",
+        "request": "https://www.bjeea.cn/html/selfstudy/xxfbt/index.html",
+        "select": ".com-list li",
+        "dateformater": "%Y-%m-%d",
+        "template":"page.md",
+        "output": "docs/bj.md"
+    },
+    {
+        "city": "安徽",
+        "name": "安徽教育招生考试院",
+        "domain": "https://www.ahzsks.cn/",
+        "request": "https://www.ahzsks.cn/gdjyzxks/search2.jsp?c=77",
+        "select": ".list-news ul li",
+        "dateformater": "%Y-%m-%d",
+        "template":"page.md",
+        "output": "docs/ah.md"
+    },
+    {
+        "city": "浙江",
+        "name": "浙江省教育考试院",
+        "domain": "https://www.zjzs.net/",
+        "request": "https://www.zjzs.net/moban/index/2c9081f061d15b160161d1661f040016_list.html",
+        "select": "#content ul li",
+        "dateformater": "%Y-%m-%d",
+        "template":"page.md",
+        "output": "docs/zj.md"
+    },
+    {
+        "city": "江苏",
+        "name": "江苏省教育考试院",
+        "domain": "https://www.jseea.cn",
+        "request": "https://www.jseea.cn/webfile/selflearning_exam/selflearning_apply/",
+        "select": "ul.news-list.content-list-ul li",
+        "dateformater": "%Y-%m-%d",
+        "template":"page.md",
+        "output": "docs/js.md"
+    }
+]
