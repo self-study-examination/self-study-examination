@@ -37,7 +37,7 @@ class AbstractTown(object):
         
         if list is None:
             logging.warning("request error.")
-            return
+            return []
         
         data = []
         
@@ -219,7 +219,7 @@ def write_readme(list):
     template = env.get_template('readme.md')
     content = template.render(list=list)
     
-    with open('notification/README.md', "w", encoding="utf-8") as f:
+    with open('docs/README.md', "w", encoding="utf-8") as f:
             f.write(content)
     
 
