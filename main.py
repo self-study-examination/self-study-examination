@@ -180,11 +180,7 @@ class Zj(AbstractTown):
         return index
     
     def handler_time(self,time):
-        
-        logging.debug("ZJ time is %s", time.text)
         m = re.search(r'\(.+\)',time.text)
-        logging.debug("ZJ time match %s", m)
-                
         if m:
             return m.group(0)
         
